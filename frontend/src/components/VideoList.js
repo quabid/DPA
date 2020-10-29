@@ -4,7 +4,7 @@ import { Col, ListGroup, ListGroupItem } from 'react-bootstrap';
 const VideoList = ({ videos, handleClick }) => {
   return (
     <Col
-      className="d-inline-block "
+      className="d-inline-block mt-md-0 mt-xs-4"
       style={{ fontSize: '1.2rem' }}
       md={3}
       xs={12}

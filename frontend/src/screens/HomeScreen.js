@@ -32,12 +32,10 @@ const HomeScreen = () => {
   ) : error ? (
     <Message variant="danger">{error}</Message>
   ) : (
-    <Container fluid>
-      <Row>
-        <VideoPlayer vurl={url} />
-        <VideoList handleClick={handleClick.bind(this)} videos={videos} />
-      </Row>
-    </Container>
+    <Row>
+      <VideoPlayer vurl={url} />
+      <VideoList handleClick={handleClick.bind(this)} videos={videos} />
+    </Row>
   );
 };
 
