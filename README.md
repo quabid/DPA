@@ -9,7 +9,7 @@
   - Babel/Core: v7.11.6
   - Gulp: v4.0.2
 
-![Screenshot](/logo/dp_.png)
+![Screenshot](/logo/dpa.png)
 
 ```bash
 # Installation

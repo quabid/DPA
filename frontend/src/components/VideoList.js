@@ -1,0 +1,29 @@
+import React from 'react';
+import { Col, ListGroup, ListGroupItem } from 'react-bootstrap';
+
+const VideoList = ({ videos, handleClick }) => {
+  return (
+    <Col
+      className="d-inline-block "
+      style={{ fontSize: '1.2rem' }}
+      md={3}
+      xs={12}
+    >
+      {videos && videos.length > 0 ? (
+        <ListGroup>
+          {videos.map((v, ind) => (
+            <ListGroupItem
+              onClick={handleClick}
+              key={ind}
+              className="font-weight-bolder text-dark text-center"
+            >
+              {v.title}
+            </ListGroupItem>
+          ))}
+        </ListGroup>
+      ) : null}
+    </Col>
+  );
+};
+
+export default VideoList;

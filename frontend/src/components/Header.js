@@ -19,7 +19,9 @@ const Header = ({ branding = 'ProShop' }) => {
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <NavbarBrand>{branding}</NavbarBrand>
+            <NavbarBrand className="font-weight-bolder text-muted">
+              {branding}
+            </NavbarBrand>
           </LinkContainer>
           <NavbarToggle aria-controls="basic-navbar-nav" />
           <NavbarCollapse id="basic-navbar-nav">
@@ -28,7 +30,7 @@ const Header = ({ branding = 'ProShop' }) => {
                 placement={'bottom'}
                 overlay={
                   <Tooltip id={`tooltip-${'Instagram'}`}>
-                    <strong>Instagram</strong>.
+                    <strong>Instagram</strong>
                   </Tooltip>
                 }
               >
@@ -43,7 +45,7 @@ const Header = ({ branding = 'ProShop' }) => {
                 placement={'bottom'}
                 overlay={
                   <Tooltip id={`tooltip-${'YouTube'}`}>
-                    <strong>YouTube</strong>.
+                    <strong>YouTube</strong>
                   </Tooltip>
                 }
               >

@@ -32,5 +32,11 @@ code {
   background-position: center;
   background-size: cover;
   border: none;
-  opacity: 0.3;
+  opacity: 0.2;
+}
+
+@media screen and (min-width: 992px) {
+  #about-screen {
+    margin-top: 20rem;
+  }
 }

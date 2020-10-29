@@ -1,38 +1,43 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Row, Container } from 'react-bootstrap';
+import Message from '../components/Message';
+import Loader from '../components/Loader';
+import VideoList from '../components/VideoList';
+import VideoPlayer from '../components/VideoPlayer';
+import { listVideos } from '../actions/VideoActions';
 
-const HomeScreen = ({ vdo_src }) => {
-  return (
-    <>
-      <Container fluid={true}>
-        <Row>
-          <Col lg={6}>
-            <h2 className="h1">When We Create You Elevate</h2>
-          </Col>
-          <Col lg={6}>
-            <p className="lead">
-              Our slogan says it all. We have a talent team and support system
-              that keeps us all together. We are different from any movie and
-              television company.
-            </p>
+const HomeScreen = () => {
+  const dispatch = useDispatch();
+  const [url, setUrl] = useState('');
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              inventore illum, harum nesciunt hic earum atque maiores possimus
-              itaque. Blanditiis mollitia quos obcaecati aliquam possimus
-              debitis minima ratione quisquam explicabo?
-            </p>
-          </Col>
-        </Row>
-      </Container>
-      <video id="background-video" playsInline loop autoPlay={true} muted>
-        <source
-          src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-    </>
+  // @ts-ignore
+  const videoList = useSelector(state => state.videoList);
+  const { loading, error, videos } = videoList;
+
+  useEffect(() => {
+    dispatch(listVideos());
+  }, [dispatch]);
+
+  const handleClick = e => {
+    const title = e.target.innerText;
+    const vlink = videos.find(x => x.title === title).v;
+
+    vlink !== null ? console.log(vlink) : console.log(`\n\n\t\tNope\n\n`);
+    setUrl(vlink);
+  };
+
+  return loading ? (
+    <Loader />
+  ) : error ? (
+    <Message variant="danger">{error}</Message>
+  ) : (
+    <Container fluid>
+      <Row>
+        <VideoPlayer vurl={url} />
+        <VideoList handleClick={handleClick.bind(this)} videos={videos} />
+      </Row>
+    </Container>
   );
 };
 
