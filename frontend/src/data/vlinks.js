@@ -1,9 +1,9 @@
 const data = [
   { v: 'https://youtu.be/Z5Ys92CxMBE', title: 'Krispy Kreme' },
-  {
+  /*  {
     v: 'https://www.youtu.be-nocookie.com/embed/2NSD4Z1L8Js',
     title: 'No Title',
-  },
+  }, */
   {
     v: 'https://youtu.be/F0D2N49CCWA',
     title: 'Impossible Conversations Podcast Episode 7',

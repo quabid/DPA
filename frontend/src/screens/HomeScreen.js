@@ -23,8 +23,7 @@ const HomeScreen = () => {
     const title = e.target.innerText;
     const vlink = videos.find(x => x.title === title).v;
 
-    vlink !== null ? console.log(vlink) : console.log(`\n\n\t\tNope\n\n`);
-    setUrl(vlink);
+    vlink !== null ? setUrl(vlink) : console.log(`\n\n\t\tNope\n\n`);
   };
 
   return loading ? (
