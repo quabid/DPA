@@ -1,0 +1,19 @@
+#background-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+  z-index: -100;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  opacity: 0.4;
+}
+
+.showcase-container {
+  display: grid;
+  align-content: center;
+  align-self: center;
+}

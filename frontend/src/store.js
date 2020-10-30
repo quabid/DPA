@@ -1,10 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import {
-  videoDetailsReducer,
-  videoListReducer,
-} from './reducers/VideoReducers';
+import { videoListReducer } from './reducers/VideoReducers';
 
 const reducer = combineReducers({
   videoList: videoListReducer,
