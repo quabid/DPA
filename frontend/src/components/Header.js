@@ -16,7 +16,7 @@ import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 const Header = ({ branding = 'ProShop' }) => {
   return (
     <header id="menu">
-      <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+      <Navbar bg="transparent" variant="dark" expand="lg" collapseOnSelect>
         <Container fluid>
           <LinkContainer to="/">
             <NavbarBrand className="font-weight-bolder text-muted">

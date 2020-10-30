@@ -126,3 +126,4 @@ firebase_config.txt
 # frontend
 frontend/package-lock.json
 frontend/node_modules
+frontend/src/bootstrap.css
