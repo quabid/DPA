@@ -15,33 +15,33 @@ import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
 const Header = ({ branding = 'ProShop' }) => {
   return (
-    <header id='menu'>
-      <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
-        <Container>
-          <LinkContainer to='/'>
-            <NavbarBrand className='font-weight-bolder text-muted'>
-              <span className='branding'> {branding}</span>
+    <header id="menu">
+      <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+        <Container fluid>
+          <LinkContainer to="/">
+            <NavbarBrand className="font-weight-bolder text-muted">
+              <span className="branding"> {branding}</span>
             </NavbarBrand>
           </LinkContainer>
-          <NavbarToggle aria-controls='basic-navbar-nav' />
-          <NavbarCollapse id='basic-navbar-nav'>
-            <Nav className='mr-auto'>
+          <NavbarToggle aria-controls="basic-navbar-nav" />
+          <NavbarCollapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
               <OverlayTrigger
                 placement={'bottom'}
                 overlay={
                   <Tooltip id={`tooltip-${'About US'}`}>
-                    <strong className='font-weight-bolder'>About Us</strong>
+                    <strong className="font-weight-bolder">About Us</strong>
                   </Tooltip>
                 }
               >
-                <LinkContainer to='/about'>
-                  <NavLink className='font-weight-bolder'>
-                    <i className='fas fa-question fw '></i> About Us
+                <LinkContainer to="/about">
+                  <NavLink className="font-weight-bolder">
+                    <i className="fas fa-info fw "></i> About Us
                   </NavLink>
                 </LinkContainer>
               </OverlayTrigger>
             </Nav>
-            <Nav className='ml-auto font-weight-bolder'>
+            <Nav className="ml-auto font-weight-bolder">
               <OverlayTrigger
                 placement={'bottom'}
                 overlay={
@@ -50,9 +50,9 @@ const Header = ({ branding = 'ProShop' }) => {
                   </Tooltip>
                 }
               >
-                <LinkContainer to='/#'>
+                <LinkContainer to="/#">
                   <NavLink>
-                    <i className='fab fa-instagram fw'></i> Instagram
+                    <i className="fab fa-instagram fw"></i> Instagram
                   </NavLink>
                 </LinkContainer>
               </OverlayTrigger>
@@ -65,9 +65,9 @@ const Header = ({ branding = 'ProShop' }) => {
                   </Tooltip>
                 }
               >
-                <LinkContainer to='/redirect'>
+                <LinkContainer to="/redirect">
                   <NavLink>
-                    <i className='fab fa-youtube fw'></i> YouTube
+                    <i className="fab fa-youtube fw"></i> YouTube
                   </NavLink>
                 </LinkContainer>
               </OverlayTrigger>

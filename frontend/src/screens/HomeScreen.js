@@ -7,9 +7,9 @@ const HomeScreen = () => {
   });
 
   return (
-    <div className='landing'>
-      <video id='background-video' playsInline loop autoPlay={true} muted>
-        <source src='/space_flight.mp4' type='video/mp4' />
+    <div className="landing">
+      <video id="background-video" playsInline loop autoPlay={true} muted>
+        <source src="/space_flight.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <LandingContent />
