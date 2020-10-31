@@ -35,7 +35,7 @@ const LandingContent = () => {
             </OverlayTrigger>
           </Nav>
           <Row>
-            <Col xs={12}>
+            <Col className="text-left font-weight-bolder" xs={12}>
               <p className="p-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                 animi perspiciatis dignissimos tempore sed, quo quibusdam
@@ -50,11 +50,29 @@ const LandingContent = () => {
                 mollitia, eius voluptatem voluptatum expedita nostrum harum quo
                 hic quidem eveniet.
               </p>
+
+              <p className="p-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                molestias maxime deserunt sunt rerum illo consequuntur non
+                excepturi doloribus? Alias eaque nesciunt, dolor odio
+                consequatur optio laboriosam blanditiis perferendis soluta.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                corporis? Eveniet qui optio nihil, animi laudantium, sint
+                ducimus voluptates, enim cupiditate dolorum praesentium sunt
+                iure! Ducimus inventore incidunt similique vitae. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Facilis, ad, porro
+                soluta quidem incidunt praesentium tenetur quas et odio saepe
+                alias, ut delectus quos aut quaerat accusantium tempore placeat
+                possimus. Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Impedit distinctio asperiores, possimus obcaecati esse
+                sunt provident? Quia, provident eligendi, expedita nam ratione
+                velit quas quod, assumenda labore numquam unde mollitia.
+              </p>
             </Col>
           </Row>
         </Col>
 
-        <Col lg={8} xs={12}>
+        <Col className="my-2" lg={8} xs={12}>
           <Card
             style={{
               opacity: '0.6',
