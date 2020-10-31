@@ -37,23 +37,15 @@ const LandingContent = () => {
         </Col>
 
         <Col lg={8} xs={12}>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
-            tenetur blanditiis cupiditate fugiat illum rem veritatis atque
-            facere quo at quas placeat minima necessitatibus obcaecati voluptas
-            voluptatibus, exercitationem ad iste. Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Distinctio exercitationem esse
-            veritatis dolorum, minus consectetur, aspernatur vitae aperiam
-            voluptatem explicabo adipisci velit hic, omnis architecto beatae
-            cumque quos dolorem ea. Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Distinctio commodi sed tempora, pariatur eaque
-            recusandae ullam eos? Ab exercitationem, reprehenderit fugit, error
-            accusamus ratione debitis ut non minus asperiores quae? Lorem ipsum
-            dolor, sit amet consectetur adipisicing elit. In aliquam fugiat non
-            iusto ea ad magnam officiis dignissimos deleniti, accusamus
-            inventore placeat id maxime laudantium illo, sapiente numquam, quia
-            sed!
-          </p>
+          <Card
+            style={{
+              opacity: '0.6',
+              background: 'rgba(10,10,20,0.5',
+              borderRadius: '10px',
+            }}
+          >
+            <Card.Img src="/dpa_logo.png" alt="dyverse productions" />
+          </Card>
         </Col>
       </Row>
       <Row>
