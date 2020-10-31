@@ -34,6 +34,24 @@ const LandingContent = () => {
               </LinkContainer>
             </OverlayTrigger>
           </Nav>
+          <Row>
+            <Col xs={12}>
+              <p className="p-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                animi perspiciatis dignissimos tempore sed, quo quibusdam
+                voluptatum quis vero. Commodi fuga adipisci magnam quia, quis
+                eveniet repellendus eligendi necessitatibus animi. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Est error
+                perferendis voluptatibus quidem sequi reiciendis, dolorem rerum
+                voluptas animi, odio architecto facilis dolor suscipit
+                exercitationem quo distinctio eius, minus natus. Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Quaerat ex
+                provident, ipsa enim fugit sunt corporis, natus dolorum dolore
+                mollitia, eius voluptatem voluptatum expedita nostrum harum quo
+                hic quidem eveniet.
+              </p>
+            </Col>
+          </Row>
         </Col>
 
         <Col lg={8} xs={12}>
