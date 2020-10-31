@@ -58,7 +58,12 @@ code {
 
 @media screen and (max-width: 580px) {
   #about-screen {
-    margin-top: 0.5rem;
+    margin-top: 2.5rem;
+  }
+
+  #about-container {
+    position: absolute;
+    top: 2.5rem;
   }
 }
 
