@@ -8,14 +8,15 @@ import {
   Container,
   Row,
   Col,
+  Card,
 } from 'react-bootstrap';
 
-const Header_ = () => {
+const LandingContent = () => {
   return (
     <Container fluid className="showcase-container text-center">
       <Row>
         <Col lg={4} xs={12}>
-          <Nav className="d-inline-block text-center">
+          <Nav className="d-inline-block text-center m-0">
             <OverlayTrigger
               placement={'bottom'}
               overlay={
@@ -26,7 +27,7 @@ const Header_ = () => {
             >
               <LinkContainer to="/videos">
                 <NavLink>
-                  <h1 className="h4 font-weight-bolder">
+                  <h1 className="h4 font-weight-bolder m-0 p-0">
                     <i className="fas fa-video fw fa-1x"></i> See what's next
                   </h1>
                 </NavLink>
@@ -57,8 +58,14 @@ const Header_ = () => {
       </Row>
       <Row>
         <Col>
-          <div>
-            <p className="lead text-left">
+          <Card
+            style={{
+              opacity: '0.6',
+              background: 'rgba(10,10,20,0.5',
+              borderRadius: '10px',
+            }}
+          >
+            <p className="lead text-left text-white p-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
               odio magni eius explicabo, ipsum, vel, asperiores quisquam
               exercitationem cupiditate nam modi. Voluptate assumenda tempore
@@ -88,11 +95,11 @@ const Header_ = () => {
               adipisci blanditiis atque sint, doloremque suscipit dignissimos
               in?
             </p>
-          </div>
+          </Card>
         </Col>
       </Row>
     </Container>
   );
 };
 
-export default Header_;
+export default LandingContent;

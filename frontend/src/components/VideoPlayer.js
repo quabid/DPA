@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player';
 
 const VideoPlayer = ({ vurl }) => {
   return (
-    <Col className="wrapper" md={9} xs={12}>
+    <Col className="wrapper" lg={9} xs={12}>
       <ReactPlayer
         controls={true}
         width={'100%'}

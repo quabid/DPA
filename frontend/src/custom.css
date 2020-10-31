@@ -16,4 +16,11 @@
   display: grid;
   align-content: center;
   align-self: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 999px) {
+  .showcase-container {
+    margin-top: 6.9rem;
+  }
 }
