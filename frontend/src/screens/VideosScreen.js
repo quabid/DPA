@@ -12,24 +12,24 @@ const HomeScreen = () => {
   const [url, setUrl] = useState('');
 
   // @ts-ignore
-  const videoList = useSelector((state) => state.videoList);
+  const videoList = useSelector(state => state.videoList);
   const { loading, error, videos } = videoList;
 
   useEffect(() => {
     dispatch(listVideos());
   }, [dispatch]);
 
-  const handleClick = (e) => {
+  const handleClick = e => {
     const title = e.target.innerText;
-    const vlink = videos.find((x) => x.title === title).v;
+    const vlink = videos.find(x => x.title === title).v;
 
-    vlink !== null ? setUrl(vlink) : console.log(`\n\n\t\tNope\n\n`);
+    vlink !== null && setUrl(vlink);
   };
 
   return loading ? (
     <Loader />
   ) : error ? (
-    <Message variant='danger'>{error}</Message>
+    <Message variant="danger">{error}</Message>
   ) : (
     <Row>
       <VideoPlayer vurl={url} />
