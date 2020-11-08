@@ -9,17 +9,25 @@ import VideosScreen from './screens/VideosScreen';
 function App() {
   return (
     <Router>
-      <Header branding='Dyverse Productions' />
+      <Header branding="Dyverse Productions" />
       <main>
         <Container fluid>
-          <Route path='/' component={Home} exact />
-          <Route path='/videos' component={VideosScreen} exact />
-          <Route path='/about' component={About} exact />
+          <Route path="/" component={Home} exact />
+          <Route path="/videos" component={VideosScreen} exact />
+          <Route path="/about" component={About} exact />
           <Route
-            path='/redirect'
+            path="/youtube"
             component={() => {
               window.location.href =
                 'https://www.youtube.com/channel/UCmElDwZrRIjcdgMHq1BeXJQ';
+              return null;
+            }}
+          />
+          <Route
+            path="/instagram"
+            component={() => {
+              window.location.href =
+                'https://www.instagram.com/dyverseproductions/?hl=en';
               return null;
             }}
           />

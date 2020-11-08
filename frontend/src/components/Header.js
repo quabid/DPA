@@ -50,7 +50,7 @@ const Header = ({ branding = 'ProShop' }) => {
                   </Tooltip>
                 }
               >
-                <LinkContainer to="/#">
+                <LinkContainer to="/instagram">
                   <NavLink>
                     <i className="fab fa-instagram fw"></i> Instagram
                   </NavLink>
@@ -65,7 +65,7 @@ const Header = ({ branding = 'ProShop' }) => {
                   </Tooltip>
                 }
               >
-                <LinkContainer to="/redirect">
+                <LinkContainer to="/youtube">
                   <NavLink>
                     <i className="fab fa-youtube fw"></i> YouTube
                   </NavLink>
